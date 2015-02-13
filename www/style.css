@@ -1,0 +1,311 @@
+﻿/**
+#0E1818 -> (more darked DarkSlateGray) borders
+SlateGray -> base text
+DarkKhaki
+Olive 
+#333366 -> head1
+*/
+
+/***********************************************************************/
+body {
+background-color: black;
+}
+
+a {
+color: SlateGray;
+text-decoration: underline;
+font-size: 18px;
+}
+
+a:hover {
+color: white;
+font-size: 18.1px;
+}
+
+/***********************************************************************
+FONTS
+***********************************************************************/
+.font_norm {
+font-size: 18px;
+color: gray  ;
+}
+
+.font_head1 {
+font-size:large; 
+font-weight:bold; 
+color: #333366;
+}
+
+.font_desc {
+font-size: larger; 
+font-weight: bold; 
+color: Olive;
+font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.font_sense {
+font-size: larger; 
+font-style: italic;
+font-size: 16px;
+color: gray;
+font-family: "Comic Sans MS";
+}
+
+.font_slogan {
+color: SlateGray;	
+font-size: larger; 
+font-style: italic;
+font-size: 22px;
+font-family: "Comic Sans MS";
+}
+
+.font_error {
+font-size: 18px;
+color: red;
+}
+
+/***********************************************************************/
+.main_title {
+text-align: center; 
+font-size: large; 
+font-weight: bold; 
+color: black;
+}
+
+p.main_title {
+background-color: Olive;
+color: ;
+font-weight:bold;
+margin:5px;
+padding:5px;
+}
+
+/***********************************************************************/
+#main_table {
+width: 1000px; 
+border: 1px double #0E1818;
+border-collapse: inherit;
+text-align: center;
+margin: auto;
+}
+
+#main_table td, th {
+border: 1px double #0E1818;
+}
+
+/***********************************************************************/
+#horiz_table {
+border-collapse: collapse;
+padding-left: 10px;
+margin: 10px;
+}
+
+#horiz_table tr {
+border-bottom: 1px solid gray;
+}
+
+#horiz_table td {
+padding: 10px;
+border-width: 0px;
+text-align: left;    
+}
+
+.horiz_line {
+border-top: 1px;
+border-color: gray;
+width: 97%;
+text-align: center;
+}
+
+/***********************************************************************/
+#work_table {
+border-collapse: collapse;
+margin: 10px;
+}
+
+#work_table tr {
+border-bottom: 1px solid gray;
+}
+
+#work_table td {
+border-width: 0px;
+text-align: center;  
+padding-bottom: 10px;  
+}
+
+/***********************************************************************/
+#table_empty_border {
+border-collapse: collapse;
+}
+
+#table_empty_border tr {
+border-width: 0px;  
+}
+
+#table_empty_border td {
+border-width: 0px;  
+}
+/***********************************************************************/
+#main_cell {
+background-color: black;
+background-image: url("../images/main_top.jpg");
+background-repeat: no-repeat;
+vertical-align: text-top;
+margin: 10px;
+height: 400px;
+position: relative;
+}
+
+/* для обычных страниц */
+#main_cell_bottom {
+background-image: url("../images/main_bottom.png");
+background-repeat: no-repeat;
+background-position: left bottom;
+position: absolute; /* расширяем элемент, чтоб занимал все свободное пространство */
+left:0;
+right:0;
+top:0;
+bottom:0;
+}
+/* для длинных страниц с длиной main_cell > 400px */
+#main_cell_bottom_long {
+background-image: url("../images/main_bottom.png");
+background-repeat: no-repeat;
+background-position: left bottom;
+}
+
+#menu_cell {
+background-color: black;
+background-image: url("../images/menu_top.jpg");
+background-repeat: no-repeat;
+background-position: left top;
+vertical-align: top;
+width: 165px;
+position: relative;
+}
+
+#menu_cell_bottom {
+background-image: url("../images/menu_bottom.png");
+background-repeat: no-repeat;
+background-position: left bottom;
+height: 100%;
+position: absolute; 
+left:0;
+right:0;
+top:0;
+bottom:0;
+}
+
+#top_cell {
+background-color: black;
+background-image: url("../images/top.jpg");
+background-repeat: no-repeat;
+vertical-align: bottom;
+height: 97px; /*120px*/
+padding: 15px;
+padding-bottom: 5px;
+}
+
+#bottom_cell {
+background-color: black;
+background-image: url("../images/bottom.jpg");
+background-repeat: no-repeat;
+background-position: left bottom;
+vertical-align: top;
+height: 56px; /*75px*/
+padding: 10px;
+}
+
+/***********************************************************************/
+#main_menu {
+border: 1px solid black; /*Стиль рамки */
+border-bottom-width: 0px;
+background-color: #0E1818;  /*Фоновый цвет ячейки*/
+margin: 5px; /*Ширина отступов*/
+text-align: left;
+}
+
+#main_menu a {
+font: bold 13px Verdana; /*Шрифт текста*/
+padding: 4px; /*Внутренний отсутп текста ссылки от краев ячейки*/
+display: block;
+width: 100%; /*Ширина ячейки*/
+color: SlateGray;  /*Цвет текста*/
+text-decoration: none; /*Подчеркивание у ссылок - нет*/
+border-bottom: 1px solid black;
+}
+
+html>body #main_menu a{ 
+width: auto;
+}
+
+#main_menu a:hover {
+background-color: Olive; /*Фоновый цвет ячейки при наведение курсора*/
+color: black;  /*Цвет текста при наведении курсора*/
+padding-left: 10px;/*Внутренний отсутп текста ссылки от левого края ячейки*/
+}
+
+/***********************************************************************/
+#button {
+border: 1px solid black; /*Стиль рамки */
+width: 100%; /*Ширина меню */
+background-color: #0E1818;  /*Фоновый цвет ячейки*/
+padding: 0px;
+}
+
+#button a {
+font: bold 13px Verdana; /*Шрифт текста*/
+padding: 4px; /*Внутренний отсутп текста ссылки от краев ячейки*/
+display: block;
+width: 100%; /*Ширина ячейки*/
+color: SlateGray;  /*Цвет текста*/
+text-decoration: none; /*Подчеркивание у ссылок - нет*/
+}
+
+html>body #button a{ 
+width: auto;
+}
+
+#button a:hover {
+background-color: Olive; /*Фоновый цвет ячейки при наведение курсора*/
+color: black;  /*Цвет текста при наведении курсора*/
+}
+
+/***********************************************************************/
+#text_field {
+border: 1px solid black;
+width: 100%;
+background-color: Gray;
+padding: 0px;
+width: auto;
+color: black;
+padding: 4px;
+}
+
+#text_field:hover {
+background-color: LightGray;
+}
+
+/***********************************************************************/
+.radio_button {
+margin: 2;
+padding: 0;
+clear: both;
+}
+
+label.radio_button {
+display: block;
+padding: 0.5em 0.5em 0.5em 2em;
+}
+
+input.radio_button {
+float: left;
+position: relative;
+top: 0.5em;
+left: 0.5em;
+}
+
+/***********************************************************************/
+#vk_comments {
+margin: 10px;
+}
